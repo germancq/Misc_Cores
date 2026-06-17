@@ -1,0 +1,13 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1775216991" />
+    <testcase name="run_full_adder_test_001" classname="test_full_adder" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_test_factory.py" lineno="25" time="0.00019621849060058594" sim_time_ns="10.0" ratio_time="50963.59659781288" />
+    <testcase name="run_full_adder_test_002" classname="test_full_adder" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_test_factory.py" lineno="25" time="7.557868957519531e-05" sim_time_ns="10.000000000000002" ratio_time="132312.42902208204" />
+    <testcase name="run_full_adder_test_003" classname="test_full_adder" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_test_factory.py" lineno="25" time="6.151199340820312e-05" sim_time_ns="10.0" ratio_time="162569.92248062015" />
+    <testcase name="run_full_adder_test_004" classname="test_full_adder" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_test_factory.py" lineno="25" time="4.982948303222656e-05" sim_time_ns="10.0" ratio_time="200684.4019138756" />
+    <testcase name="run_full_adder_test_005" classname="test_full_adder" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_test_factory.py" lineno="25" time="4.839897155761719e-05" sim_time_ns="10.0" ratio_time="206615.960591133" />
+    <testcase name="run_full_adder_test_006" classname="test_full_adder" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_test_factory.py" lineno="25" time="5.1975250244140625e-05" sim_time_ns="10.0" ratio_time="192399.26605504588" />
+    <testcase name="run_full_adder_test_007" classname="test_full_adder" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_test_factory.py" lineno="25" time="6.031990051269531e-05" sim_time_ns="10.0" ratio_time="165782.76679841898" />
+    <testcase name="run_full_adder_test_008" classname="test_full_adder" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_test_factory.py" lineno="25" time="4.744529724121094e-05" sim_time_ns="10.0" ratio_time="210769.04522613066" />
+  </testsuite>
+</testsuites>

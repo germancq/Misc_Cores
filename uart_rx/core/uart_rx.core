@@ -1,0 +1,85 @@
+CAPI=2:
+
+name : ::uart_rx:1
+description : uart_rx
+
+targets:
+  default: &default
+    filesets:
+      - rtl
+  
+  basys3:
+    <<: *default
+    default_tool: vivado
+    filesets_append:
+      - basys3_constraints
+    parameters:
+      - BAUDIOS=9600
+      - CLK_HZ=100000000
+    toplevel: uart_rx
+    tools:
+      vivado:
+        part: xc7a35tcpg236-1
+
+  tang_nano9k:
+    flow: apicula
+    filesets:
+      - rtl
+      - tang_nano9k_constraints
+    flow_options:
+      board: tangnano9k
+    parameters:
+      - clk_freq_hz=27_000_000
+    toplevel: uart_rx
+
+  sim:
+    flow: sim
+    flow_options:
+      tool: verilator
+      verilator_options: [-Wno-WIDTHEXPAND -Wno-WIDTHTRUNC -Wno-SELRANGE]
+      cocotb_module: test_uart_rx
+      timescale: 1ns/1ns
+      vcs_options: [-timescale=1ns/1ns]
+    filesets: [rtl,cocotb]
+    toplevel: uart_rx
+    parameters:
+      - BAUDIOS=9600
+      - CLK_HZ=100000000
+
+parameters:
+  BAUDIOS:
+    datatype: int
+    paramtype: vlogparam
+  CLK_HZ:
+    datatype: int
+    paramtype: vlogparam
+
+filesets:
+  rtl:
+    file_type: systemVerilogSource
+    files:
+      - ../hdl/uart_rx.sv
+    depend:
+      - shift_register
+      - counter
+
+  cocotb:
+     files:
+       - ../cocotb/test_uart_rx.py : {file_type : user, copyto: .}
+       - ../cocotb/UART_RX.py : {file_type : user, copyto: .}
+     depend:
+       - vlog_tb_utils
+
+
+  basys3_constraints:
+      file_type: xdc
+      files:
+        - ../constraints/basys3_top.xdc
+
+  tang_nano9k_constraints:
+      files:
+        - ../constraints/tang_nano_9k.cst : {file_type : CST}
+        - ../constraints/tang_nano_9k.sdc : {file_type : SDC}
+
+
+

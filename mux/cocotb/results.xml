@@ -1,0 +1,15 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1779987342" />
+    <testcase name="run_mux_test_001" classname="test_mux" file="/home/germancq/gitProjects/testing_venv/lib/python3.13/site-packages/cocotb/_test_factory.py" lineno="16" time="0.0003223419189453125" sim_time_ns="10.0" ratio_time="31022.958579881655" />
+    <testcase name="run_mux_test_002" classname="test_mux" file="/home/germancq/gitProjects/testing_venv/lib/python3.13/site-packages/cocotb/_test_factory.py" lineno="16" time="0.00011110305786132812" sim_time_ns="10.000000000000002" ratio_time="90006.52360515023" />
+    <testcase name="run_mux_test_003" classname="test_mux" file="/home/germancq/gitProjects/testing_venv/lib/python3.13/site-packages/cocotb/_test_factory.py" lineno="16" time="9.393692016601562e-05" sim_time_ns="10.0" ratio_time="106454.41624365482" />
+    <testcase name="run_mux_test_004" classname="test_mux" file="/home/germancq/gitProjects/testing_venv/lib/python3.13/site-packages/cocotb/_test_factory.py" lineno="16" time="9.012222290039062e-05" sim_time_ns="10.0" ratio_time="110960.42328042327" />
+    <testcase name="run_mux_test_005" classname="test_mux" file="/home/germancq/gitProjects/testing_venv/lib/python3.13/site-packages/cocotb/_test_factory.py" lineno="16" time="9.250640869140625e-05" sim_time_ns="10.0" ratio_time="108100.61855670103" />
+    <testcase name="run_mux_test_006" classname="test_mux" file="/home/germancq/gitProjects/testing_venv/lib/python3.13/site-packages/cocotb/_test_factory.py" lineno="16" time="8.869171142578125e-05" sim_time_ns="10.0" ratio_time="112750.10752688172" />
+    <testcase name="run_mux_test_007" classname="test_mux" file="/home/germancq/gitProjects/testing_venv/lib/python3.13/site-packages/cocotb/_test_factory.py" lineno="16" time="8.654594421386719e-05" sim_time_ns="10.0" ratio_time="115545.56473829201" />
+    <testcase name="run_mux_test_008" classname="test_mux" file="/home/germancq/gitProjects/testing_venv/lib/python3.13/site-packages/cocotb/_test_factory.py" lineno="16" time="9.608268737792969e-05" sim_time_ns="10.0" ratio_time="104077.02233250621" />
+    <testcase name="run_mux_test_009" classname="test_mux" file="/home/germancq/gitProjects/testing_venv/lib/python3.13/site-packages/cocotb/_test_factory.py" lineno="16" time="9.632110595703125e-05" sim_time_ns="10.0" ratio_time="103819.40594059406" />
+    <testcase name="run_mux_test_010" classname="test_mux" file="/home/germancq/gitProjects/testing_venv/lib/python3.13/site-packages/cocotb/_test_factory.py" lineno="16" time="9.369850158691406e-05" sim_time_ns="10.0" ratio_time="106725.29262086513" />
+  </testsuite>
+</testsuites>

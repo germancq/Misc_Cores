@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1775314237" />
+    <testcase name="run_memory_test/index=0" classname="test_memory_module" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_decorators.py" lineno="61" time="0.0020630359649658203" sim_time_ns="990.0" ratio_time="479875.2987403213" />
+  </testsuite>
+</testsuites>

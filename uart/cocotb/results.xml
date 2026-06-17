@@ -1,0 +1,10 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1775591327" />
+    <testcase name="test/index=0" classname="test_uart" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_decorators.py" lineno="20" time="9.175720691680908" sim_time_ns="2031375.0" ratio_time="221385.88000414282" />
+    <testcase name="test/index=1" classname="test_uart" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_decorators.py" lineno="20" time="9.4147310256958" sim_time_ns="2031375.0000000002" ratio_time="215765.5905894423" />
+    <testcase name="test/index=2" classname="test_uart" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_decorators.py" lineno="20" time="9.33109426498413" sim_time_ns="2031375.0000000005" ratio_time="217699.5475892832" />
+    <testcase name="test/index=3" classname="test_uart" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_decorators.py" lineno="20" time="9.32659363746643" sim_time_ns="2031375.0" ratio_time="217804.60036766683" />
+    <testcase name="test/index=4" classname="test_uart" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_decorators.py" lineno="20" time="9.349867820739746" sim_time_ns="2031375.000000001" ratio_time="217262.42968847466" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1775212600" />
+    <testcase name="run_half_adder_test_001" classname="test_half_adder" file="/home/germancq/git_projects/microcredencial-fusesoc/solutions/venv_microcredencial/lib64/python3.13/site-packages/cocotb/_test_factory.py" lineno="14" time="0.0002205371856689453" sim_time_ns="40.0" ratio_time="181375.30810810812" />
+  </testsuite>
+</testsuites>
