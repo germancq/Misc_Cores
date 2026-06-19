@@ -18,3 +18,49 @@ module mux #(
   assign dout = (sel == 0) ? a : b;
 
 endmodule : mux
+
+
+module mux_4 #(
+    parameter N = 8
+) (
+    input [DATA_WIDTH-1:0] a,
+    input [DATA_WIDTH-1:0] b,
+    input [DATA_WIDTH-1:0] c,
+    input [DATA_WIDTH-1:0] d,
+    output [DATA_WIDTH-1:0] dout,
+    input [1:0] sel
+);
+
+  logic [DATA_WIDTH-1:0] m00_o;
+  logic [DATA_WIDTH-1:0] m01_o;
+
+  mux #(
+      .N(DATA_WIDTH)
+  ) m00 (
+      .a(a),
+      .b(b),
+      .dout(m00_o),
+      .sel(sel[0])
+  );
+
+  mux #(
+      .N(DATA_WIDTH)
+  ) m01 (
+      .a(c),
+      .b(d),
+      .dout(m01_o),
+      .sel(sel[0])
+  );
+
+  mux #(
+      .N(DATA_WIDTH)
+  ) m10 (
+      .a(m00_o),
+      .b(m01_o),
+      .dout(e),
+      .sel(sel[1])
+  );
+
+
+
+endmodule : mux_4
