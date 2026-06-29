@@ -57,7 +57,7 @@ module mux_4 #(
   ) m10 (
       .a(m00_o),
       .b(m01_o),
-      .dout(e),
+      .dout(dout),
       .sel(sel[1])
   );
 
