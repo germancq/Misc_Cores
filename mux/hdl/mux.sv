@@ -31,11 +31,11 @@ module mux_4 #(
     input  [  1:0] sel
 );
 
-  logic [DATA_WIDTH-1:0] m00_o;
-  logic [DATA_WIDTH-1:0] m01_o;
+  logic [N-1:0] m00_o;
+  logic [N-1:0] m01_o;
 
   mux #(
-      .N(DATA_WIDTH)
+      .N(N)
   ) m00 (
       .a(a),
       .b(b),
@@ -44,7 +44,7 @@ module mux_4 #(
   );
 
   mux #(
-      .N(DATA_WIDTH)
+      .N(N)
   ) m01 (
       .a(c),
       .b(d),
@@ -53,7 +53,7 @@ module mux_4 #(
   );
 
   mux #(
-      .N(DATA_WIDTH)
+      .N(N)
   ) m10 (
       .a(m00_o),
       .b(m01_o),
