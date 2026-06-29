@@ -23,12 +23,12 @@ endmodule : mux
 module mux_4 #(
     parameter N = 8
 ) (
-    input [DATA_WIDTH-1:0] a,
-    input [DATA_WIDTH-1:0] b,
-    input [DATA_WIDTH-1:0] c,
-    input [DATA_WIDTH-1:0] d,
-    output [DATA_WIDTH-1:0] dout,
-    input [1:0] sel
+    input  [N-1:0] a,
+    input  [N-1:0] b,
+    input  [N-1:0] c,
+    input  [N-1:0] d,
+    output [N-1:0] dout,
+    input  [  1:0] sel
 );
 
   logic [DATA_WIDTH-1:0] m00_o;
